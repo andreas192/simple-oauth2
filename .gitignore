@@ -1,0 +1,6 @@
+private-key.pem
+public-key.pem
+
+.vscode/*
+
+__debug_bin
