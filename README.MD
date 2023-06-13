@@ -22,17 +22,17 @@
 *   Run in terminal `go mod download`
 *   Run in terminal go run .
 *   Test JWT Generate API:
-curl --location 'localhost:8090/token' \
+`curl --location 'localhost:8090/token' \
 --header 'Content-Type: application/json' \
 --data '{
     "username": "<your user>",
     "password": "<your password>"
-}'
+}'`
 *   Test Signing Key API
-curl --location 'localhost:8090/signing-keys' \
---header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODY2ODQxODYsImlzcyI6InlvdXItaXNzdWVyIiwic3ViIjoiY2xpZW50In0.MwMVoA5ttjxG12b8c0EbTuki5t2vwnZTjlGPZtfJFm3-SFGuPyAj7pK9weilbVULbZ4-6IoFdtvEQT4PQZ3uNpWw-zjClI-CgIfvbs_D97xUaj_a48CfOrYzUCFgDK_xesfH5tXcKLOBn3O5Yg4kR4BTQEff-Z9XFH0B6HLQP2ZzGFnBLuNy89F_FG6lVfsnaj4agscigSOCTvn61T8GXnF8pZc2fbdUPiDlpdCFq7jbBwRT0fQ55jvpu2QhDWOQdEFPWob8ll6yQVSVk0md4FQCrwRJ7C1Kk7p2Aw5NmHDVaqzG1wtdBUtMWVm-tGZOA1LaAuR-0SXpaWebIOsSzw'
+`curl --location 'localhost:8090/signing-keys' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODY2ODQxODYsImlzcyI6InlvdXItaXNzdWVyIiwic3ViIjoiY2xpZW50In0.MwMVoA5ttjxG12b8c0EbTuki5t2vwnZTjlGPZtfJFm3-SFGuPyAj7pK9weilbVULbZ4-6IoFdtvEQT4PQZ3uNpWw-zjClI-CgIfvbs_D97xUaj_a48CfOrYzUCFgDK_xesfH5tXcKLOBn3O5Yg4kR4BTQEff-Z9XFH0B6HLQP2ZzGFnBLuNy89F_FG6lVfsnaj4agscigSOCTvn61T8GXnF8pZc2fbdUPiDlpdCFq7jbBwRT0fQ55jvpu2QhDWOQdEFPWob8ll6yQVSVk0md4FQCrwRJ7C1Kk7p2Aw5NmHDVaqzG1wtdBUtMWVm-tGZOA1LaAuR-0SXpaWebIOsSzw'`
 *   Test Introspection API
-curl --location 'localhost:8090/introspection' \
---header 'Authorization: Bearer <access_token from /token API>'
-*   Celebrate!!!
+`curl --location 'localhost:8090/introspection' \
+--header 'Authorization: Bearer <access_token from /token API>'`
+*   **Celebrate!!!**
 
