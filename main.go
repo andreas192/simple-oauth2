@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"simple-oauth2/config"
-	"simple-oauth2/introspection"
-	"simple-oauth2/jwtGenerator"
-	signingKeys "simple-oauth2/signing-keys"
+	"simple-oauth2/handlers/introspection"
+	"simple-oauth2/handlers/jwtGenerator"
+	signingKeys "simple-oauth2/handlers/signing-keys"
 )
 
 func main() {
